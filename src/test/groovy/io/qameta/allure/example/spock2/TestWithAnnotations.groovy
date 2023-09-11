@@ -23,6 +23,7 @@ import spock.lang.Specification
  */
 class TestWithAnnotations extends Specification {
 
+    @AllureId("517")
     @Epic("epic1")
     @Epics([
             @Epic("epic2"),

@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "tests": [
+    {
+      "selector": "io.qameta.allure.example.spock2.FailedTest.failedTest"
+    },
+    {
+      "id": "517"
+    }
+  ]
+}

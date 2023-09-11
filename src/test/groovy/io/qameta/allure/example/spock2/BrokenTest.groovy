@@ -15,6 +15,7 @@
  */
 package io.qameta.allure.example.spock2
 
+
 import spock.lang.Specification
 
 /**
