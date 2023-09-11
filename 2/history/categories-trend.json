@@ -1,14 +1,1 @@
-[ {
-  "buildOrder" : 2,
-  "reportUrl" : "https://allure-examples.github.io/allure-spock2-gradle-kts/2",
-  "reportName" : "Allure Report with history",
-  "data" : { }
-}, {
-  "buildOrder" : 1,
-  "reportUrl" : "https://allure-examples.github.io/allure-spock2-gradle-kts/1/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "Product defects" : 2,
-    "Test defects" : 1
-  }
-} ]
+[{"buildOrder":2,"reportUrl":"https://allure-examples.github.io/allure-spock2-gradle-kts/2/","reportName":"Allure Report with history","data":{"Product defects":2,"Test defects":1}},{"buildOrder":1,"reportUrl":"https://allure-examples.github.io/allure-spock2-gradle-kts/1/","reportName":"Allure Report with history","data":{"Product defects":2,"Test defects":1}},{"buildOrder":3,"reportUrl":"https://allure-examples.github.io/allure-spock2-gradle-kts/3/","reportName":"Allure Report with history","data":{"Product defects":2,"Test defects":1}},{"buildOrder":2,"reportUrl":"https://allure-examples.github.io/allure-spock2-gradle-kts/2","reportName":"Allure Report with history","data":{}},{"buildOrder":1,"reportUrl":"https://allure-examples.github.io/allure-spock2-gradle-kts/1/","reportName":"Allure Report with history","data":{"Product defects":2,"Test defects":1}}]
