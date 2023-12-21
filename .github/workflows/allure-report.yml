@@ -1,4 +1,5 @@
 name: Allure Report
+run-name: ${{ github.actor }} is creating Allure report 🚀
 
 on:
   push:
@@ -10,41 +11,39 @@ jobs:
     name: Run tests and generate Allure Report
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up JDK
-        uses: actions/setup-java@v3
+      - name: Clone repository
+        uses: actions/checkout@v4.1.1
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4.0.0
         with:
-          java-version: 8
+          java-version: 21
           cache: 'gradle'
           distribution: 'zulu'
 
-      - name: Install dependencies
-        run: ./gradlew compileTestJava
-
       - name: Run Test
-        if: always()
         run: ./gradlew test
         continue-on-error: true
 
-      - name: Get Allure history
-        uses: actions/checkout@v3
+      - name: Setup Allure History
+        uses: actions/checkout@v4.1.1
         if: always()
         continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages
 
-      - name: Allure Report action from marketplace
+      - name: Generate Allure Report
         uses: simple-elf/allure-report-action@v1.7
         if: always()
         with:
           allure_results: build/allure-results
           allure_history: allure-history
 
-      - name: Deploy report to Github Pages
+      - name: Publish Allure Report
         if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history

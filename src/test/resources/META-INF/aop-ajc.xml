@@ -1,5 +1,0 @@
-<aspectj>
-    <weaver options="-warn:none -Xlint:ignore">
-        <exclude within="org.codehaus..*"/>
-    </weaver>
-</aspectj>

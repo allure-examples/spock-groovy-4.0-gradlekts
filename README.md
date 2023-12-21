@@ -1,5 +1,15 @@
-# Allure Spock 2 Groovy 4 example
+# Allure Example
 
-This project uses Gradle KTS, JUnit Platform and Groovy 4
+> Example of Allure Report usage with spock, groovy 4.0 and Gradle (Kotlin)
 
-The generated report available here: https://allure-examples.github.io/allure-spock2-gradle-kts
+<!--<img src="https://allurereport.org/public/img/allure-report.svg" alt="Allure Report logo" style="float: right" />-->
+
+- Learn more about Allure Report at https://allurereport.org
+- 📚 [Documentation](https://allurereport.org/docs/) – discover official documentation for Allure Report
+- ❓ [Questions and Support](https://github.com/orgs/allure-framework/discussions/categories/questions-support) – get help from the team and community
+- 📢 [Official annoucements](https://github.com/orgs/allure-framework/discussions/categories/announcements) – be in touch with the latest updates
+- 💬 [General Discussion ](https://github.com/orgs/allure-framework/discussions/categories/general-discussion) – engage in casual conversations, share insights and ideas with the community
+
+---
+
+The generated report is available here: [https://allure-examples.github.io/spock-groovy-4.0-gradlekts](https://allure-examples.github.io/spock-groovy-4.0-gradlekts/)
