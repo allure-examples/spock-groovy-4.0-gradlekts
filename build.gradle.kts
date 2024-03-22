@@ -3,7 +3,7 @@ plugins {
 }
 
 tasks.withType(Wrapper::class) {
-    gradleVersion = "8.5"
+    gradleVersion = "8.6"
 }
 
 group = "com.example.spock"
@@ -11,7 +11,7 @@ version = "1.0-SNAPSHOT"
 
 val allureVersion = "2.25.0"
 val aspectJVersion = "1.9.21"
-val groovyVersion = "4.0.16"
+val groovyVersion = "4.0.20"
 val spockVersion = "2.3-groovy-4.0"
 
 java {
@@ -51,11 +51,11 @@ dependencies {
     
     testImplementation(platform("org.apache.groovy:groovy-bom:$groovyVersion"))
 
-    testImplementation(platform("org.junit:junit-bom:5.10.1"))
+    testImplementation(platform("org.junit:junit-bom:5.10.2"))
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 
-    testImplementation("org.slf4j:slf4j-simple:2.0.9")
+    testImplementation("org.slf4j:slf4j-simple:2.0.12")
 }
 
 repositories {
