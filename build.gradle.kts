@@ -3,14 +3,14 @@ plugins {
 }
 
 tasks.withType(Wrapper::class) {
-    gradleVersion = "8.6"
+    gradleVersion = "8.7"
 }
 
 group = "com.example.spock"
 version = "1.0-SNAPSHOT"
 
-val allureVersion = "2.25.0"
-val aspectJVersion = "1.9.21"
+val allureVersion = "2.26.0"
+val aspectJVersion = "1.9.22"
 val groovyVersion = "4.0.20"
 val spockVersion = "2.3-groovy-4.0"
 
