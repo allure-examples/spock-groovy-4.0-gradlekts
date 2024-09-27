@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Sep 27 15:58:48 GMT 2024","Fri Sep 27 15:58:48 GMT 2024","104","","StepTest","","com.example.spock.StepTest","Simple Test","Simple Test",""
