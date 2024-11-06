@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","75","Simple Test","","Wed Nov 06 17:20:51 GMT 2024","passed","Wed Nov 06 17:20:51 GMT 2024","","StepTest","com.example.spock.StepTest","Simple Test"
